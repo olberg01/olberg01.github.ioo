@@ -1,0 +1,49 @@
+body {
+background-color: #123456;
+}
+
+header {
+text-align: center; font-size: 200%; color: white;
+}
+
+main {
+text-align: left; color:white;
+}
+
+footer {
+text-align: right; color: white;
+}
+
+ol {
+  color:white;
+}
+
+ul {
+  color:white;
+}
+
+p {
+  color:white;
+}
+
+img  {
+  width:48%; height:25%;border: 4px solid white;
+}
+
+video  {
+  width:75%;height:45%;
+}
+
+.navbar a {
+  width:15%;overflow:auto; padding: 12px; color: white; font-size: 17px; width:14%;text-align: center; background-color: darkred;border: 4px solid black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:hotpink;
+}
+
+
+th {
+  color:white; border:2px solid white;
+}

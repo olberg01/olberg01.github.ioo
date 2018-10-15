@@ -1,0 +1,40 @@
+body {
+  background-color: lightblue;padding-left: 200px;
+}
+
+header {
+  text-align: center;font-size: 35px;
+}
+
+.navbar a {
+  width:15%;overflow:auto; padding: 12px; color: black; font-size: 17px; width:14%;text-align: center; background-color: lightblue;border: 2px solid black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:white;
+}
+
+img  {
+  width: 400px;
+}
+
+p1  {
+  font-size:20px;color:black;
+}
+
+video {
+  width:300px;
+}
+
+h1  {
+  font-size: 30px;
+}
+
+h2  {
+  font-size:10px;
+}
+
+th {
+  color:black; border:2px solid white;
+}

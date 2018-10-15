@@ -1,0 +1,14 @@
+
+
+main{
+
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-column-gap: 15px;
+  grid-row-gap:3px;
+}
+
+main p{
+  background-color:dodgerblue;
+  padding: 30px;
+}
