@@ -1,0 +1,25 @@
+#tabell{
+  display:grid;
+  grid-template-columns: repeat(18, 1fr);
+}
+
+#tabell div{
+  padding:10px;
+  border:1px solid black;
+}
+
+.usynlig {
+  opacity:0;
+}
+
+.ikkemetall {
+  background-color: yellow;
+}
+
+.metall {
+  background-color:lightblue;
+}
+
+.halvmetall {
+  background-color: red;
+}

@@ -1,0 +1,54 @@
+body{
+  text-align: center;
+  max-width: 960px;
+  margin:auto;
+  margin-top: 10px;
+}
+#innhold{
+  display:grid; grid-template-columns:repeat(3,1fr); grid-gap:10px; grid-auto-rows: minmax(200px,auto);
+}
+
+#innhold div{
+  background:pink;
+  padding:30px;
+  border: 2px solid black;
+}
+
+#innhold div:nth-child(even){
+  background:grey;
+}
+
+.fire {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+}
+
+.fire p{
+  border:5px solid pink;
+  padding:20px;
+  margin:0;
+}
+
+/*
+
+.en {
+  grid-column:span 2;
+}
+
+.tre {
+  grid-row: span 2;
+}
+
+.åtte {
+  grid-column:2/4;
+}
+
+.ni {
+  grid-row:4;
+  grid-column: 1/2;
+}
+
+.fire {
+  opacity:0;
+}
