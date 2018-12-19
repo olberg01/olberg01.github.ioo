@@ -1,0 +1,211 @@
+
+.navbar a {
+  width:25%;
+  overflow:auto;
+  padding: 12px;
+  color: white;
+  font-size: 20px;
+  width:25%;
+  text-align: center;
+  background-color:black;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-radius: 15%;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-left: -20px;
+  font-family: "Verdana";
+}
+
+a:hover {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 15%;
+}
+
+body {
+    margin:25px;
+    background-color: black;
+}
+
+.navbar {
+  padding-left: 630px;
+  margin-top: 60px;
+}
+
+img {
+  height: 25%;
+  width: 15%;
+  padding-left: 100px;
+  float:left;
+}
+
+.Pogdog {
+  height:20%;
+  width:17%;
+  margin-left: 1200px;
+  margin-top: 165px;
+  margin-right: auto;
+}
+
+H1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 280px;
+  font-family: "Courier";
+  color: white;
+}
+
+#innhold{
+  display:grid;
+  grid-template-columns:repeat(3,230px);
+  grid-gap:40px;
+  grid-auto-rows: minmax(10px,210px);
+  grid-auto-columns: minmax(10px,200px);
+  padding-right: 750px;
+  margin-left: 430px;
+  margin-top: 100px;
+  margin-bottom: -450px;
+}
+
+#innhold div{
+  color:white;
+  text-align: center;
+  border:2px solid black;
+  border-radius: 15%;
+  background-image: repeating-radial-gradient(red, black);
+}
+
+#innhold div p {
+  font-size:20px;
+}
+
+#innhold div:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+#laglogo:hover {
+  border: 2px solid white;
+}
+
+.dato {
+  color:red;
+  font-style:
+}
+
+.Fella {
+  float: right;
+  width:440px;
+  height:600px;
+  position: relative;
+  top: -250px;
+  margin-right: 30px;
+}
+
+.Rashford {
+  float:left;
+  width:280px;
+  height:490px;
+  position: relative;
+  top: -200px;
+  margin-left: -40px;
+}
+
+
+.laglogo {
+  width:110px;
+  height:120px;
+  margin-left: -40px;
+}
+
+.table {
+  position: relative;
+  left: 950px;
+  top: 30px;
+  width: 300px;
+  height: 460px;
+  border-right: 5px solid red;
+  border-top: 5px solid red;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  padding-left: 2px;
+}
+
+.innholdo {
+  display:grid;
+  grid-template-columns:repeat(1,200px);
+  border-right: 5px solid red;
+  border-top: 5px solid red;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  margin-left: 330px;
+  margin-top: 150px;
+  margin-bottom: -450px;
+  width: 55%;
+  height: 400px;
+}
+
+.Juanfield:hover, .table:hover, .dc:hover {
+  opacity: 0.6;
+}
+
+.stornyhet {
+  font-size: 90px;
+  color: red;
+  position: absolute;
+  top: 605px;
+  left: 380px;
+  font-family: "Impact";
+}
+
+.nyhet {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  top: 300px;
+}
+
+.Juanfield {
+  position: relative;
+  width: 878px;
+  height: 400px;
+  right: 100px;
+  opacity: 0.9;
+}
+
+.dc {
+  position:relative;
+  height: 250px;
+  width: 370px;
+  top: 70px;
+  padding-left: 2px;
+  border-right: 5px solid red;
+  border-top: 5px solid red;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+
+}
+
+.undertittel {
+  position: absolute;
+  top: 690px;
+  left: 380px;
+}
+
+.dnk {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  bottom: 200px;
+  left: 420px;
+  font-family: "Impact";
+  letter-spacing: 5px;
+  line-height: 50px;
+}
+
+.Contact {
+  width: 104%;
+  margin-left: -130px;
+}

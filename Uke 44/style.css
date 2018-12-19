@@ -1,0 +1,42 @@
+body  {
+  background-color: gray;
+}
+
+.navbar a {
+  width:30%;overflow:auto; padding: 12px; color: black; font-size: 17px; width:30%;text-align: center; background-color: orange;border: 2px solid black;
+  text-decoration: none;
+}
+
+#innhold {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+#innhold div{
+  padding:10px;
+  border:1px solid black;
+}
+
+.tall {
+  border:2px solid black;
+  background-color: gray;
+}
+.navbar {
+  padding-left: 590px;
+}
+
+.navbar a:hover {
+  color: white; font-size: 200%;background-color: hotpink;
+}
+
+.bignews {
+  grid-column: span 2;
+  grid-row: span 6;
+  text-align: center;
+  background-color: orange;
+}
+
+.normalnews {
+  grid-column: span 1;
+  grid-row: span 3;
+}
