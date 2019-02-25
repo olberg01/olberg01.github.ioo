@@ -5,22 +5,34 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
+  background
 }
 
-@media (max-width:1200px) {
+@media (max-width:1400px) {
   main{
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color: yellow;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
   main{
+    background-color: limegreen;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+}
+
+@media (max-width:800px) {
+  main{
+    background-color: red;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width:700px) {
+@media (max-width:600px) {
   main{
+    background-color: blue;
     grid-template-columns: 1fr;
   }
 }

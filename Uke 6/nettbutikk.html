@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <button onclick="visAlleVarer">Alle Varer</button>
+        <button onclick="visBukser">Alle Bukser</button>
+        <button onclick="visSkjorter">Alle Skjorter</button>
+        <button>Handlekurv</button>
+        <button>Vis Handlekurv</button>
+      </nav>
+
+    </header>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBC3B1kmpGHfaslAznUsMzQMQkvHl61mRs",
+        authDomain: "nettbutikk2-dbd0c.firebaseapp.com",
+        databaseURL: "https://nettbutikk2-dbd0c.firebaseio.com",
+        projectId: "nettbutikk2-dbd0c",
+        storageBucket: "nettbutikk2-dbd0c.appspot.com",
+        messagingSenderId: "1083914516414"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+<script>
+  var database = firebase.database();
+  var bukser = database.ref("varer/bukser");
+  var skjorter = database.ref("varer/skjorter");
+
+let main = document.querySelector("main");
+         function visVare(snapshot) {
+             let vare = snapshot.val();
+             main.innerHTML += `
+                 <article>
+                     <img src="bilder/${vare.bilde}">
+                     <h1>${vare.merke} ${vare.modell}</h1>
+                     <p>${vare.pris}</p>
+                 </article>
+             `;
+         }
+         sokefelt.oninput = sok;
+         function sok () {
+             søketekst=sokefelt.value;
+             visBukser();
+
+         }
+         function visAlleVarer() {
+             bukser.on("child_added", visVare);
+             skjorter.on("child_added", visVare);
+         }
+         visAlleVarer();
+         function visAlleVarer() {
+             main.innerHTML = " "; //Fjerner alt innhold i main
+             bukser.on("child_added", visVare);
+             skjorter.on("child_added", visVare);
+         }
+         function visBukser() {
+             main.innerHTML = " ";
+             //bukser.on("child_added", visVare);
+             bukser
+                 .orderByChild("merke")
+                 .startAt(søketekst)
+                 .endAt(søketekst + '\uf8ff')
+                 .on("child_added", visVare);
+         }
+         function visSkjorter() {
+             main.innerHTML = " ";
+             skjorter.on("child_added", visVare);
+         }
+        </script>
+  </body>
+</html>

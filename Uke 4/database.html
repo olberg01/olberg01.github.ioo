@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA5Ap6w47xMufIavOG4ZId-cpz4KmKON4s",
+        authDomain: "thishitbetterwork-c360d.firebaseapp.com",
+        databaseURL: "https://thishitbetterwork-c360d.firebaseio.com",
+        projectId: "thishitbetterwork-c360d",
+        storageBucket: "thishitbetterwork-c360d.appspot.com",
+        messagingSenderId: "1000320986261"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+<section>
+      <form id="skjema">
+          <input id="inpNavn" type="text" required placeholder="navn">
+          <input id="inpTelefon" type="text" required placeholder="telefon">
+          <input id="inpEpost" type="text" required placeholder="epost">
+          <button type="submit">Registrer kontakt</button>
+      </form>
+  </section>
+  <section id="secKontakter">
+  </section>
+
+<script>
+      const db = firebase.database();
+      const kontaktliste = db.ref("kontaktliste")
+      kontaktliste.push(
+        {
+      "navn": "Philip",
+      "alder": "17",
+      "gate": "Høvikveien",
+      "husnummer": "22E",
+      "postkode": "1363",
+      "sted": "Høvik",
+    }
+      )
+      kontaktliste.push(
+        {
+      "navn": "Magnus",
+      "alder": "17",
+      "gate": "Hoslevei",
+      "husnummer": "13",
+      "postkode": "1345",
+      "sted": "Hosle",
+      }
+      )
+
+      kontaktliste.push(
+        {
+      "navn": "Casper",
+      "alder": "17",
+      "gate": "Blommisveien",
+      "husnummer": "7",
+      "postkode": "1365",
+      "sted": "Blommis",
+      }
+      )
+      kontaktliste.push(
+        {
+      "navn": "Jesper",
+      "alder": "17",
+      "gate": "Jessieveien",
+      "husnummer": "99",
+      "postkode": "1364",
+      "sted": "Haslum",
+      }
+      )
+    </script>
+  </body>
+</html>
