@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dyreklinikken</title>
+    <!-- Husk å koble til firebase -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="">Oppgave 3a</button> <!-- Gjør ferdig knappene og koblingene her-->
+
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+      const main = document.querySelector("main");
+      const db = firebase.database();
+      const hunder = db.ref("");  //Fyll inn riktig referanse
+                                  //Lag en referanse for katter også!
+
+      function genererHTML(snapshot){
+        let dyr = snapshot.val();
+        main.innerHTML +=`
+            <article class="Dyr">
+              <h1>${dyr.Navn}</h1>
+              <img src="${dyr.Bilde}" alt="">
+              <p>Farge: ${dyr.Farge1}, ${dyr.Type2}</p>
+              <p>Alder: ${dyr.Alder}</p>
+            </article>
+        `
+      }
+
+      function visAlle(){
+        main.innerHTML = "";
+        hunder.on("child_added",genererHTML);
+        katter.on("child_added", genererHTML);
+      }
+
+      visAlle();
+
+      // Lag egne funksjoner som tilfredstiller spørringene til oppgave 3A, 3B, 3C og 3D her:
+
+    </script>
+
+  </body>
+</html>

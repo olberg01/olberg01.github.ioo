@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <title> MovieBank </title>
+
+  </head>
+  <body>
+
+    <a href="Forside.html">
+      <img class="logo" src="Bilder/logo.jpg" alt="logo">
+    </a>
+
+    <div class="navbar">
+
+      <a href="Forside.html">Hjem</a>
+      <a href="Shop.html">Filmer</a>
+      <a href="Kanaler.html">Kanaler</a>
+
+    </div>
+
+    <h1 class="overskrift">
+      POPULÆRE
+    </h1>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <a href="movieinfo.html?id=N004">
+        <img src="Bilder/end.jpg" class="slbilde">
+        </a>
+        <div class="text1">AVENGERS: ENDGAME</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <a href="movieinfo.html?id=N001">
+        <img src="Bilder/cm2.jpg" class="slbilde">
+        <div class="text1">CAPTAIN MARVEL</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <a href="movieinfo.html?id=N005">
+        <img src="Bilder/br2.jpg" class="slbilde">
+        <div class="text1">BOHEMIAN RHAPSODY</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <a href="movieinfo.html?id=N007">
+        <img src="Bilder/j.jpg" class="slbilde">
+        <div class="agh">JOKER</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <h2 class="overskrift o">
+      KRITIKERROSTE
+    </h2>
+
+    <div class="forbilder">
+      <div class="gallery">
+        <a href="movieinfo.html?id=N010">
+          <img src="Bilder/hm.jpg" width="600" height="800">
+        </a>
+        <div class="desc">Den sanne historien om Taj Hotel terroristangrepet i Mumbai, hotellets heroiske personale og deres utenkelige ofre.</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=K005">
+          <img src="Bilder/tdk.jpg" width="600" height="800">
+        </a>
+        <div class="desc">Når The Joker kommer ut av sin mystiske fortid, skaper han kaos i Gotham og for 'The Dark Knight'.</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=K007">
+          <img src="Bilder/tsr.jpg" width="600" height="800">
+        </a>
+        <div class="desc">To fengslede menn bonder gjennom flere år, og finner trøst og endelig innløsning gjennom handlinger av felles anstendighet.</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=K013">
+          <img src="Bilder/prestige.jpg" width="600" height="800">
+        </a>
+        <div class="desc">Etter en tragisk ulykke, kjemper to tryllekunstnere for å skape den ultimative illusjonen og ofrer alt de må for å vinne.</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=K014">
+          <img src="Bilder/rpo.jpg" width="600" height="800">
+        </a>
+        <div class="desc">Når skaperen av en virtuell virkelighets- verden kalt OASIS dør, utfordrer han alle OASIS-brukere til å finne sitt påskeegg</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=K019">
+          <img src="Bilder/ib.jpg" width="600" height="800">
+        </a>
+        <div class="desc">Under andre verdenskrig faller en plan om å myrde nazister av en gruppe jødiske amerikanske soldater sammen.</div>
+      </div>
+
+      <div class="gallery">
+        <a href="movieinfo.html?id=N006">
+          <img src="Bilder/ln.jpg" width="600" height="800">
+        </a>
+        <div class="desc">På toppen av hans karriere, begynte Michael Jackson relasjoner med to gutter. De hevder nå at han misbrukte dem.</div>
+      </div>
+    </div>
+
+    <div>
+      <a class="tfilmk" href="Shop.html">Alle Filmer</a>
+    </div>
+
+    <h2 class="omoss">HVA ER MOVIEBANK?</h2>
+
+    <p class="om">
+      Moviebank er en online database med informasjon relatert til filmer, inkludert skuespillere, IMdB-rating, <br>produksjonsbesetning og info om hvor utvalgte filmer kan streames.
+    </p>
+
+    <div class="footer">
+      <p>MOVIEBANK</p>
+    </div>
+
+    <script>
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      if (slideIndex >= slides.length) {slideIndex = 0}
+      slides[slideIndex].style.display = "block";
+      setTimeout(showSlides, 4000);
+      slideIndex++;
+      console.log(slideIndex);
+    }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <title></title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD7U9uwcfYFf6RXmQHn9hDcrCLcF2L13dA",
+      authDomain: "suhdude-78253.firebaseapp.com",
+      databaseURL: "https://suhdude-78253.firebaseio.com",
+      projectId: "suhdude-78253",
+      storageBucket: "suhdude-78253.appspot.com",
+      messagingSenderId: "625738941262"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>
+  <body>
+
+    <a href="Forside.html">
+    <img class="logo" src="Bilder/logo.jpg" alt="logo">
+    </a>
+    <div class="navbar">
+       <a href="Forside.html">Hjem</a>
+       <a href="Shop.html">Filmer</a>
+       <a href="Kanaler.html">Kanaler</a>
+    </div>
+
+    <main>
+
+    </main>
+
+    <div class="footer">
+      <p>MOVIEBANK</p>
+    </div>
+
+    <script>
+      const main = document.querySelector("main");
+
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+      console.log(id);
+
+      const db = firebase.database();
+      const klassikere = db.ref("Filmer/Klassikere/" + id )
+      const nye = db.ref("Filmer/Nye/" + id )
+      const soon = db.ref("Filmer/Soon/" + id )
+
+      function genererHTML(snapshot){
+
+          console.log(snapshot.val());
+          let filmer = snapshot.val();
+          main.innerHTML +=`
+              <article class="borderrr">
+                <h1 class="utittel">${filmer.Navn}</h1>
+                <div class="uinfo">
+                <p> <b>Starring:</b> <br> <br> ${filmer.Skuespillere}</p>
+                <br>
+                <p><b>År:</b> ${filmer.År}</p>
+                  <br>
+                <p><b>Regissør:</b> ${filmer.Regissør}</p>
+                <br>
+                <p><b>✰${filmer.Rating}</b></p>
+                </div>
+                <div class="uuom">
+                <p class="uom">${filmer.Info}</p>
+                <div>
+                <div class="fyf">
+                <img class="ubilde" src="${filmer.Bilde}" alt="">
+                </div>
+              </article>
+          `
+      }
+
+      if (id.charAt(0) === "K") {
+      klassikere.on("value", genererHTML);
+    }
+
+      else if (id.charAt(0) === "C") {
+      soon.on("value", genererHTML);
+    }
+
+      else if (id.charAt(0) === "N") {
+      nye.on("value", genererHTML);
+    }
+
+    </script>
+
+  </body>
+</html>

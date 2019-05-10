@@ -1,0 +1,474 @@
+{
+  "Filmer" : {
+    "Klassikere" : {
+      "K001" : {
+        "Navn" : "Inception",
+        "Bilde" : "Bilder/inc.jpg",
+        "År" : 2010,
+        "Regissør" : "Christopher Nolan",
+        "Skuespillere" : {
+          "1":"Leonardo diCaprio",
+          "2":"Joseph Gordon-Levitt",
+          "3":"Tom Hardy"
+        },
+        "Rating" : 8.8
+      },
+      "K002" : {
+        "Navn" : "Forrest Gump",
+        "Bilde" : "Bilder/fg.jpg",
+        "År" : 1994,
+        "Regissør" : "Robert Zemeckis",
+        "Skuespillere" : {
+          "1":"Tom Hanks",
+          "2":"Robin Wright",
+          "3":"Gary Sinise"
+        },
+        "Rating" : 8.8
+      },
+      "K003" : {
+        "Navn" : "Back To The Future",
+        "Bilde" : "Bilder/btf.jpg",
+        "År" : 1985,
+        "Regissør" : "Robert Zemeckis",
+        "Skuespillere" : {
+          "1":"Michael J. Fox",
+          "2":"Christopher Lloyd"
+        },
+        "Rating" : 8.5
+      },
+      "K004" : {
+        "Navn" : "Pulp Fiction",
+        "Bilde" : "Bilder/pf.jpg",
+        "År" : 1994,
+        "Regissør" : "Quentin Tarantino",
+        "Skuespillere" : {
+          "1":"John Travolta",
+          "2":"Uma Thurman",
+          "3":"Samuel L. Jackson"
+        },
+        "Rating" : 8.9
+      },
+      "K005" : {
+        "Navn" : "The Dark Knight",
+        "Bilde" : "Bilder/tdk.jpg",
+        "År" : 2008,
+        "Regissør" : "Christopher Nolan",
+        "Skuespillere" : {
+          "1":"Christian Bale",
+          "2":"Heath Ledger",
+          "3":"Aaron Eckhart"
+        },
+        "Rating" : 9.0
+      },
+      "K006" : {
+        "Navn" : "The Godfather",
+        "Bilde" : "Bilder/tg.jpg",
+        "År" : 1972,
+        "Regissør" : "Francis Coppola",
+        "Skuespillere" : {
+          "1":"Marlon Brando",
+          "2":"Al Pacino",
+          "3":"James Caan"
+        },
+        "Rating" : 9.2
+      },
+      "K007" : {
+        "Navn" : "Shawshank Redemption",
+        "Bilde" : "Bilder/tsr.jpg",
+        "År" : 1994,
+        "Regissør" : "Frank Darabont",
+        "Skuespillere" : {
+          "1":"Morgan Freeman",
+          "2":"Tim Robbins",
+          "3":"Bob Gunton"
+        },
+        "Rating" : 9.3
+      },
+      "K008" : {
+        "Navn" : "Top Gun",
+        "Bilde" : "Bilder/tgun.jpg",
+        "År" : 1986,
+        "Regissør" : "Tony Scott",
+        "Skuespillere" : {
+          "1":"Tom Cruise",
+          "2":"Tim Robbins",
+          "3":"Kelly McGillis"
+        },
+        "Rating" : 6.9
+      },
+      "K009" : {
+        "Navn" : "Fight Club",
+        "Bilde" : "Bilder/fc.jpg",
+        "År" : 1999,
+        "Regissør" : "David Fincher",
+        "Skuespillere" : {
+          "1":"Brad Pitt",
+          "2":"Edward Norton",
+          "3":"Meat Loaf"
+        },
+        "Rating" : 8.8
+      },
+      "K010" : {
+        "Navn" : "Goodfellas",
+        "Bilde" : "Bilder/gf.jpg",
+        "År" : 1990,
+        "Regissør" : "Martin Scorsese",
+        "Skuespillere" : {
+          "1":"Robert De Niro",
+          "2":"Joe Pesci",
+          "3":"Ray Liotta"
+        },
+        "Rating" : 8.7
+      },
+      "K011" : {
+        "Navn" : "Saving Private Ryan",
+        "Bilde" : "Bilder/spr.jpg",
+        "År" : 1998,
+        "Regissør" : "Steven Spielberg",
+        "Skuespillere" : {
+          "1":"Tom Hanks",
+          "2":"Matt Damon",
+          "3":"Tom Sizemore"
+        },
+        "Rating" : 8.6
+      },
+      "K012" : {
+        "Navn" : "The Usual Suspects",
+        "Bilde" : "Bilder/tus.jpg",
+        "År" : 1995,
+        "Regissør" : "Bryan Singer",
+        "Skuespillere" : {
+          "1":"Kevin Spacey",
+          "2":"Gabriel Byrne",
+          "3":"Chazz Palminteri"
+        },
+        "Rating" : 8.6
+      },
+      "K013" : {
+        "Navn" : "The Prestige",
+        "Bilde" : "Bilder/prestige.jpg",
+        "År" : 2006,
+        "Regissør" : "Christopher Nolan",
+        "Skuespillere" : {
+          "1":"Christian Bale",
+          "2":"Hugh Jackman",
+          "3":"Scarlett Johansson"
+        },
+        "Rating" : 8.5
+      },
+      "K014" : {
+        "Navn" : "Ready Player One",
+        "Bilde" : "Bilder/rpo.jpg",
+        "År" : 2018,
+        "Regissør" : "Steven Spielberg",
+        "Skuespillere" : {
+          "1":"Tye Sheridan",
+          "2":"Olivia Cooke",
+          "3":"Ben Mendelsohn"
+        },
+        "Rating" : 7.5
+      },
+      "K015" : {
+        "Navn" : "Manchester By The Sea",
+        "Bilde" : "Bilder/mbts.jpg",
+        "År" : 2016,
+        "Regissør" : "Kenneth Lonergan",
+        "Skuespillere" : {
+          "1":"Casey Affleck",
+          "2":"Michelle Williams",
+          "3":"Kyle Chandler"
+        },
+        "Rating" : 7.8
+      },
+      "K016" : {
+        "Navn" : "The Good, the Bad and the Ugly",
+        "Bilde" : "Bilder/tgtbatu.jpg",
+        "År" : 1966,
+        "Regissør" : "Sergio Leone",
+        "Skuespillere" : {
+          "1":"Clint Eastwood",
+          "2":"Eli Wallach",
+          "3":"Lee Van Cleef"
+        },
+        "Rating" : 8.9
+      },
+      "K017" : {
+        "Navn" : "The Hurt Locker",
+        "Bilde" : "Bilder/thl.jpg",
+        "År" : 2008,
+        "Regissør" : "Kathryn Bigelow",
+        "Skuespillere" : {
+          "1":"Jeremy Renner",
+          "2":"Guy Pearce",
+          "3":"Ralph Fiennes"
+        },
+        "Rating" : 7.6
+      },
+      "K018" : {
+        "Navn" : "The Naked Gun",
+        "Bilde" : "Bilder/tus.jpg",
+        "År" : 1988,
+        "Regissør" : "David Zucker",
+        "Skuespillere" : {
+          "1":"Leslie Nielsen",
+          "2":"Priscilla Presley",
+          "3":"O.J. Simpson"
+        },
+        "Rating" : 7.6
+      },
+      "K019" : {
+        "Navn" : "Inglourious Basterds",
+        "Bilde" : "Bilder/ib.jpg",
+        "År" : 2009,
+        "Regissør" : "Quentin Tarantino",
+        "Skuespillere" : {
+          "1":"Brad Pitt",
+          "2":"Diane Kruger",
+          "3":"Eli Roth"
+        },
+        "Rating" : 8.3
+      }
+    },
+    "Nye" : {
+      "N001" : {
+        "Navn" : "Captain Marvel",
+        "Bilde" : "Bilder/cm2.jpg",
+        "År" : 2019,
+        "Regissør" : "Ryan Fleck",
+        "Skuespillere" : {
+          "1":"Brie Larson",
+          "2":"Samuel L. Jackson",
+          "3":"Ben Mendelsohn"
+        },
+        "Rating" : 7.1
+      },
+      "N002" : {
+        "Navn" : "Lego Movie 2",
+        "Bilde" : "Bilder/tlm.jpg",
+        "År" : 2019,
+        "Regissør" : "Mike Mitchell",
+        "Skuespillere" : {
+          "1":"Chris Pratt",
+          "2":"Elizabeth Banks",
+          "3":"Will Arnett"
+        },
+        "Rating" : 7.0
+      },
+      "N003" : {
+        "Navn" : "Us",
+        "Bilde" : "Bilder/us.jpg",
+        "År" : 2019,
+        "Regissør" : "Jordan Peele",
+        "Skuespillere" : {
+          "1":"Elisabeth Moss",
+          "2":"Winston Duke"
+        },
+        "Rating" : 8.5
+      },
+      "N004" : {
+        "Navn" : "Avengers: Infinity War",
+        "Bilde" : "Bilder/iw2.jpg",
+        "År" : 2018,
+        "Regissør" : "Joe Russo",
+        "Skuespillere" : {
+          "1":"Mark Ruffalo",
+          "2":"Chris Hemsworth",
+          "3":"Robert Downey Jr."
+        },
+        "Rating" : 8.5
+      },
+      "N005" : {
+        "Navn" : "Bohemian Rhapsody",
+        "Bilde" : "Bilder/br2.jpg",
+        "År" : 2018,
+        "Regissør" : "Bryan Singer",
+        "Skuespillere" : {
+          "1":"Rami Malek",
+          "2":"Lucy Boynton",
+          "3":"Gwilym Lee"
+        },
+        "Rating" : 8.1
+      },
+      "N006" : {
+        "Navn" : "Leaving Neverland",
+        "Bilde" : "Bilder/ln.jpg",
+        "År" : 2019,
+        "Regissør" : "Dan Reed",
+        "Skuespillere" : {
+          "1":"Michael Jackson",
+          "2":"Wade Robson",
+          "3":"Steve Crupi"
+        },
+        "Rating" : 7.1
+      },
+      "N007" : {
+        "Navn" : "Joker",
+        "Bilde" : "Bilder/j.jpg",
+        "År" : 2019,
+        "Regissør" : "Todd Phillips",
+        "Skuespillere" : {
+          "1":"Joaquin Phoenix",
+          "2":"Zazie Beetz",
+          "3":"Robert de Niro"
+        },
+        "Rating" : "N/A"
+      },
+      "N008" : {
+        "Navn" : "Spider-Man",
+        "Bilde" : "Bilder/sm.jpg",
+        "År" : 2018,
+        "Regissør" : "Bob Persichetti",
+        "Skuespillere" : {
+          "1":"Shameik Moore",
+          "2":"Jake Johnson",
+          "3":"Hailee Steinfeld"
+        },
+        "Rating" : 8.5
+      },
+      "N009" : {
+        "Navn" : "Aquaman",
+        "Bilde" : "Bilder/a.jpg",
+        "År" : 2018,
+        "Regissør" : "James Wan",
+        "Skuespillere" : {
+          "1":"Jason Momoa",
+          "2":"Amber Heard",
+          "3":"Willem Defoe"
+        },
+        "Rating" : 7.1
+      },
+      "N010" : {
+        "Navn" : "Hotel Mumbai",
+        "Bilde" : "Bilder/hm.jpg",
+        "År" : 2018,
+        "Regissør" : "Anthony Maras",
+        "Skuespillere" : {
+          "1":"Dev Patel",
+          "2":"Armie Hammer",
+          "3":"Nazanin Boniadi"
+        },
+        "Rating" : 7.6
+      },
+      "N011" : {
+        "Navn" : "A Star Is Born",
+        "Bilde" : "Bilder/as.jpg",
+        "År" : 2018,
+        "Regissør" : "Dan Reed",
+        "Skuespillere" : {
+          "1":"Lady Gaga",
+          "2":"Bradley Cooper",
+          "3":"Sam Elliott"
+        },
+        "Rating" : 7.8
+      },
+      "N012" : {
+        "Navn" : "Black Panther",
+        "Bilde" : "Bilder/bp.jpg",
+        "År" : 2018,
+        "Regissør" : "Ryan Coogler",
+        "Skuespillere" : {
+          "1":"Chadwick Boseman",
+          "2":"Michael Jordan",
+          "3":"Lupita Nyong'o"
+        },
+        "Rating" : 7.3
+      }
+    },
+    "Soon" : {
+      "C001" : {
+        "Navn" : "Penguins",
+        "Bilde" : "Bilder/p.jpg",
+        "År" : 2019,
+        "Regissør" : "Alastair Fothergrill",
+        "Skuespillere" : {
+          "1":"Ed Helms"
+        },
+        "Rating" : "N/A"
+      },
+      "C002" : {
+        "Navn" : "Detective Pikachu",
+        "Bilde" : "Bilder/dp.jpg",
+        "År" : 2019,
+        "Regissør" : "Rob Letterman",
+        "Skuespillere" : {
+          "1":"Justice Smith",
+          "2":"Ryan Reynolds",
+          "3":"Kathryn Newton"
+        },
+        "Rating" : "N/A"
+      },
+      "C003" : {
+        "Navn" : "John Wich: Chapter 3",
+        "Bilde" : "Bilder/jw.jpg",
+        "År" : 2019,
+        "Regissør" : "Chad Stahelski",
+        "Skuespillere" : {
+          "1":"Keanu Reeves",
+          "2":"Halle Berry",
+          "3":"Laurence Fishburn"
+        },
+        "Rating" : "N/A"
+      },
+      "C004" : {
+        "Navn" : "The Hustle",
+        "Bilde" : "Bilder/th.jpg",
+        "År" : 2019,
+        "Regissør" : "Chris Addison",
+        "Skuespillere" : {
+          "a":"Rebel Wilson",
+          "b":"Anne Hathaway",
+          "c":"Alex Sharp"
+        },
+        "Rating" : "N/A"
+      },
+      "C005" : {
+        "Navn" : "Rocketman",
+        "Bilde" : "Bilder/rm.jpg",
+        "År" : 2019,
+        "Regissør" : "Dexter Fletcher",
+        "Skuespillere" : {
+          "1":"Taron Egerton",
+          "2":"Richard Madden",
+          "3":"Bryce Howard"
+        },
+        "Rating" : "N/A"
+      },
+      "C006" : {
+        "Navn" : "Poms",
+        "Bilde" : "Bilder/poms.jpg",
+        "År" : 2019,
+        "Regissør" : "Zara Hayes",
+        "Skuespillere" : {
+          "1":"Diane Keaton",
+          "2":"Alisha Boe",
+          "3":"Jacki Weaver"
+        },
+        "Rating" : "N/A"
+      },
+      "C007" : {
+        "Navn" : "Aladdin",
+        "Bilde" : "Bilder/al.jpg",
+        "År" : 2019,
+        "Regissør" : "Guy Ritchie",
+        "Skuespillere" : {
+          "1":"Will Smith",
+          "2":"Mena Massoud",
+          "3":"Nasim Pedrad"
+        },
+        "Rating" : "N/A"
+      },
+      "C008" : {
+        "Navn" : "Godzilla 2",
+        "Bilde" : "Bilder/g2.jpg",
+        "År" : 2019,
+        "Regissør" : "Michael Dougherty",
+        "Skuespillere" : {
+          "1":"Mille Bobby Brown",
+          "2":"Vera Farmiga",
+          "3":"Sally Hawkins"
+        },
+        "Rating" : "N/A"
+      }
+    }
+  }
+}

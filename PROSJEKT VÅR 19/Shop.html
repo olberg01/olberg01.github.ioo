@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="master.css">
+      <title> Filmer </title>
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyD7U9uwcfYFf6RXmQHn9hDcrCLcF2L13dA",
+          authDomain: "suhdude-78253.firebaseapp.com",
+          databaseURL: "https://suhdude-78253.firebaseio.com",
+          projectId: "suhdude-78253",
+          storageBucket: "suhdude-78253.appspot.com",
+          messagingSenderId: "625738941262"
+        };
+        firebase.initializeApp(config);
+      </script>
+   </head>
+   <body>
+      <a href="Forside.html">
+      <img class="logo" src="Bilder/logo.jpg" alt="logo">
+      </a>
+      <div class="navbar">
+         <a href="Forside.html">Hjem</a>
+         <a href="Shop.html">Filmer</a>
+         <a href="Kanaler.html">Kanaler</a>
+      </div>
+      <h1 class="overskrift">
+         FILMER
+      </h1>
+      <header>
+         <nav class="bruh">
+            <button onclick="visAlle()">Alle</button>
+            <button onclick="visRating()">Rating</button>
+            <button onclick="visKlassikere()">Klassikere</button>
+            <button onclick="visNye()">Nye</button>
+            <button onclick="viscsoon()">Coming Soon</button>
+         </nav>
+      </header>
+      <main>
+
+      </main>
+
+      <div class="footer">
+        <p>MOVIEBANK</p>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Opp">Tilbake til toppen!</button>
+
+      <script>
+         const main = document.querySelector("main");
+         const db = firebase.database();
+         const klassikere = db.ref("Filmer/Klassikere");
+         const nye = db.ref("Filmer/Nye");
+         const filmer = db.ref("Filmer");
+         const soon = db.ref("Filmer/Soon");
+
+         function genererHTML(snapshot){
+           let filmer = snapshot.val();
+           let key = snapshot.key;
+           console.log(snapshot.val());
+           main.innerHTML +=`
+               <article class="Filmer">
+               <img class="posters" src="${filmer.Bilde}" alt="Whoops">
+                <div class="overlay">
+                 <h1 class="info1"> ${filmer.Navn}</h1>
+                 <p class="rating"> ✰${filmer.Rating}</p>
+                 <a class="videreinfo" href="movieinfo.html?id=${key}"> Mer ▸</a>
+                 </div>
+               </article>
+           `
+         }
+
+         visAlle();
+
+         function visKlassikere() {
+           main.innerHTML = ``
+           klassikere.orderByChild("Navn").on("child_added", genererHTML);
+         }
+
+         function visRating() {
+           main.innerHTML = ``
+           klassikere.orderByChild("Rating").on("child_added", genererHTML);
+           nye.orderByChild("Rating").on("child_added", genererHTML);
+           soon.orderByChild("Rating").on("child_added", genererHTML);
+         }
+
+         function visAlle() {
+           main.innerHTML = ``
+           klassikere.orderByChild("Navn").on("child_added", genererHTML)
+           nye.orderByChild("Navn").on("child_added", genererHTML);
+           soon.orderByChild("Navn").on("child_added", genererHTML);
+         }
+
+         function visNye() {
+           main.innerHTML = ``
+           nye.orderByChild("Navn").on("child_added", genererHTML);
+         }
+
+         function viscsoon() {
+           main.innerHTML = ``
+           soon.orderByChild("Navn").on("child_added",genererHTML);
+         }
+
+       window.onscroll = function() {scrollFunction()};
+
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           document.getElementById("myBtn").style.display = "block";
+         } else {
+           document.getElementById("myBtn").style.display = "none";
+         }
+       }
+
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+
+      </script>
+
+
+
+   </body>
+</html>

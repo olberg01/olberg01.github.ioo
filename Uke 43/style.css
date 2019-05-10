@@ -5,7 +5,10 @@ body{
   margin-top: 10px;
 }
 #innhold{
-  display:grid; grid-template-columns:repeat(3,1fr); grid-gap:10px; grid-auto-rows: minmax(200px,auto);
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:10px;
+  grid-auto-rows: minmax(200px,auto);
 }
 
 #innhold div{

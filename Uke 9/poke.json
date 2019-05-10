@@ -12,8 +12,8 @@
             "Name": "Electrode",
             "Type1": "Electric",
             "Type2": "",
-            "MaxCP": 1657,
-            "MaxHP": 107,
+            "Max CP": 1657,
+            "Max HP": 107,
             "ImageURL": "http://cdn.bulbagarden.net/upload/thumb/8/84/101Electrode.png/250px-101Electrode.png"
         },
         "102": {
