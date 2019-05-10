@@ -43,7 +43,6 @@ body {
   position: relative;
   left: 640px;
   top: -170px;
-  padding-right: 400px;
 }
 
 .navbar a:hover {
@@ -132,7 +131,7 @@ h1.overskrift {
   margin-top: 10px;
   margin-left: 90px;
   font-family: "Courier";
-  padding-bottom:200px;
+  padding-bottom: 200px;
 }
 
 .slbilde {
@@ -381,10 +380,11 @@ h1.overskrift {
   bottom: 0;
   width: 100%;
   padding: 1px;
+  line-height: 40px;
   background-color: black;
   color: white;
   text-align: center;
-  font-family: "Trattatello";
+  font-family: "PT Sans Caption";
   font-size: 20px;
 }
 
